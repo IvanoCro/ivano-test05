@@ -218,3 +218,20 @@ footer {
 
  
 }
+@media(max-width:428px){
+    .main-title {
+        font-size: 3rem;
+    }
+    .side-title {
+        font-size: 1.8rem;
+    }
+    .section-paragraph {
+        font-size: 1.1rem;
+    }
+    .survival-section {
+        margin-left: 0;
+    }
+    .building-section, .community-section {
+        margin-right: 0;
+    }
+}
