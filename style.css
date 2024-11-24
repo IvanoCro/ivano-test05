@@ -1,0 +1,223 @@
+/* Basic Optimisation */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: Roboto, "Open Sans", sans-serif;
+    background-color: #604334;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", Poppins, serif; 
+    color:#D3D3D3;
+}
+
+.section-paragraph {
+    color: #dfcfba;
+    font-size: 1.2rem
+}
+
+.img-small{
+    max-width: 59px;
+    max-height: 59px;
+}
+
+.side-title{
+    font-size: 2.5rem;
+    margin: 2rem 1rem;
+}
+
+.italic-span {
+    font-style: italic;
+}
+
+/* Main header */
+
+.main-header {
+    background-image: url(img/header-bg.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%; 
+    max-height: 25vh; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+.nav-item{
+    margin: 1.25rem 0.625rem;
+    background-color: #4A4238;
+    box-shadow: 0px 0px 0px 4px rgba(102,98,85,0.84);
+    padding: 5px;
+    
+}
+.nav-item:hover{
+    background-color: #bdb198;
+    box-shadow: 0px 0px 0px 4px rgb(222,212,190);
+    transition: background-color 0.2s ease-in, box-shadow 0.3s ease-in;
+}
+
+.nav-link{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Main content */
+
+.main-content {
+    margin: 0rem 2.5rem;
+    padding: 1.1rem;
+    background-color: #584236;
+    max-width: 80%;
+}
+
+.intro-section {
+    text-align: center;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-size: 4.2rem;
+    max-width: 100%;
+    margin: 1rem;
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 0px 1px 20px rgba(0,0,0,1);
+}
+
+.title--img-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.survival.section {
+    margin-top: 2rem;
+}
+
+.survival-section, .mods-section {
+    margin-left: 2rem;
+}
+
+.building-section, .community-section {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 2rem;
+}
+
+
+/* Mods list */
+
+.mods-list {
+    list-style: square;
+    color: #dfcfba;
+    margin: 0.5rem 0rem 0.5rem 5rem;
+}
+.mods-list-item {
+    font-style: italic;
+
+}
+.mods-side-title {
+    font-size: 1.6rem;
+    margin: 2rem 1rem;
+}
+/* Buttons */
+.btn {
+    border: none;
+    background-color: #4A4238;
+    font-family: Roboto, "Open Sans", sans-serif;
+    
+    padding: 15px 20px;
+    display: block;
+    margin: 3rem auto 1rem auto;
+}
+.btn a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+.btn:hover {
+    background-color: #bdb198;
+    box-shadow: 0px 0px 0px 2px rgb(222,212,190);
+    transition: background-color 0.1s ease-in, box-shadow 0.2s ease-in;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    background-image: url(img/footer-bg.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 50vh; 
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.footer-text {
+    background-color: #4A4238;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+/* Media Queries  */
+
+@media(max-width:756px){
+   .nav-list {
+    flex-direction: column;
+   }
+   
+   .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .survival-section, .mods-section {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+    }
+
+    .mods-list {
+        text-align: left;
+        margin-left: 0;
+    }
+
+   .building-section, .community-section {
+    align-items: center;
+    text-align: center;
+   }
+
+   footer {
+    max-height: 20vh;    
+   }
+}
